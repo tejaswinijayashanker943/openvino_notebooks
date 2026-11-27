@@ -28,7 +28,7 @@ public Stable-Diffusion v1.5 checkpoint and builds the PyTorch FP32 denoiser —
 - Convert the denoiser to OpenVINO FP32 and FP16 IR with static shapes
 - Validate the converted models against PyTorch (output cosine similarity)
 - Run a 20-step DDIM generation loop on the converted model and decode the result with the Stable-Diffusion VAE
-- Optimize the denoiser to INT8 with NNCF Post-training Quantization
+- Optimize the denoiser to INT8 with NNCF Post-training Quantization and compare the FP32 and INT8 generations of the same seed with PSNR/SSIM
 - Compare latency and throughput of all precisions with `benchmark_app`
 
 [adabldm_nb_utils.py](adabldm_nb_utils.py) contains the model builder, the Stable-Diffusion v1.5 initialization, the

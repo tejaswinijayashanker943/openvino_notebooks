@@ -945,6 +945,7 @@ prithivMLmods
 proto
 protobuf
 PRs
+PSNR
 psychoacoustics
 PTQ
 px
@@ -1130,6 +1131,7 @@ src
 SRT
 SSD
 SSDLite
+SSIM
 SSM
 sst
 stabilityai
